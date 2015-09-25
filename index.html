@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Netn-Internet navigation</title>
+
+    <link rel="stylesheet" href="css/main.css" class="nav">
+    <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="icon" href="img/daoh.png" type="image/x-icon"/><!-- 浏览器标签如何添加ICO-->
+
+    <style type="text/css">
+</style>
+
+<body id="ebody" style=''>
+    <div class="nav">
+        <div class="nav1">
+            <a href=""><i class="fa fa-home a_icon"></i>&nbsp;设为主页</a>
+            <a href="javascript:void 0" class="right_p skin_change"><i class="fa  a_icon"></i>&nbsp;换肤</a>
+            <a href="javascript:void 0" class="right_p logn_in"><i class="fa  a_icon"></i>&nbsp;登录</a>
+            <div class="skin" style="display:none;">
+                <ul>
+                    <li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/i.JPG" onclick="return false"><span class="i_s"></span><img src="img/wenli/giftly.png" width="100px" height="80px"></a></li>
+                    <li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/3.jpg" onclick="return false" ><span class="i_s"></span><img src="img/background/3.png" width="100px" height="80px"></a></li>
+                    <li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/f1.jpg" onclick="return false"><span class="i_s"></span><img src="img/background/4.png" width="100px" height="80px"></a></li>
+                    <li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/1.jpg" onclick="return false"  ><span class="i_s"></span><img src="img/background/1.png" width="100px" height="80px"></a></li>
+                    <li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/2.jpg"  onclick="return false" ><span class="i_s"></span><img src="img/background/2.png" width="100px" height="80px"></a></li>
+                    <li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/t.jpg" onclick="return false"><span class="i_s"></span><img src="img/background/5.png" width="100px" height="80px"></a></li>
+                </ul>
+                <div class="skin_contral">
+                    <input type="submit" value="保存">
+                    <input type="submit" value="取消" class="close_skin">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="header1">
+            <a href=""><div class="logo"></div></a>
+            <h3>Born for the internet</h3>
+            <div class="storage other_cont" style="margin-top: 5px;">
+                <h3><i class="fa fa-skyatlas fa-lg"></i>&nbsp;云盘&nbsp;<i class="fa fa-caret-down"></i></h3>
+                <div class="skyatlas_href">
+                    <ul>
+                        <li><a href="http://pan.baidu.com/" target="_blank" style="background: url('img/baiduyun.ico') no-repeat ;background-size: 16px 16px;background-position: 18px 3px;"> 百度云</a></li>
+                        <li><a href="http://c33.yunpan.360.cn/" target="_blank" style="background: url('img/360yun.ico')  no-repeat;background-position: 18px 3px; ">360云盘</a></li>
+                        <li><a href="http://www.115.com/" target="_blank" style="background: url('img/115.png')no-repeat;background-size: 16px;background-position: 18px 3px;">115网盘</a></li>
+                        <li><a href="http://cloud.189.cn/" target="_blank" style="background: url('http://cloud.189.cn/logo.ico')  no-repeat ;background-size: 16px 16px;background-position: 18px 3px;">天翼云</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="email other_cont" style="border: none">
+                <form style="margin-top: 5px">
+                    <input type="text" placeholder="邮箱帐号">
+                    <span>
+                       <select>
+                           <OPTION         value="" selected>选择邮箱</OPTION>
+                           <OPTION         value=126.com >@126.com</OPTION>
+                           <OPTION         value=hotmail.com>@163.com</OPTION>
+                           <OPTION         value=sina.com>@sina.com</OPTION>
+                           <OPTION         value=souhu.com>@souhu.com</OPTION>
+                           <OPTION         value=yeah.net>@yeah.net</OPTION>
+                           <OPTION         disabled="disabled">以下为跳转链接</OPTION>
+                           <OPTION         value=qq.com>@qq.com</OPTION>
+                           <OPTION         value=gmail.com>@gmail.com</OPTION>
+                           <OPTION         value=hot.mail>@hot.mail</OPTION>
+                           <OPTION         value=163.net>@阿里云邮箱</OPTION>
+                       </select>
+                    </span>
+                    <input type="password" placeholder="密码">
+                    <span> <input type="submit" value="登录"></span>
+                </form>
+            </div>
+
+            <!--<div class="calendar other_cont">-->
+            <!--</div>-->
+
+        </div>
+    </div>
+    <div class="search">
+        <div class="search1">
+            <script language="javascript">
+
+                function gowhere1(formname) {
+                    var url;
+                    if (formname.myselectvalue.value == "0") {
+                        url = "http://www.baidu.com/baidu";
+                        document.search_form1.tn.value = "baidu";
+                        formname.method = "get";
+                    }
+                    if (formname.myselectvalue.value == "1") {
+                        url = "http://mp3.baidu.com/m";
+                        document.search_form1.tn.value = "baidump3";
+                        document.search_form1.ct.value = "134217728";
+                        document.search_form1.lm.value = "-1";
+                    }
+
+                    if (formname.myselectvalue.value == "4") {
+                        document.search_form1.tn.value = "news";
+                        document.search_form1.cl.value = "2";
+                        document.search_form1.rn.value = "20";
+                        url = "http://news.baidu.com/ns";
+                    }
+                    if (formname.myselectvalue.value == "5") {
+                        document.search_form1.tn.value = "baiduiamge";
+                        document.search_form1.ct.value = "201326592";
+                        document.search_form1.cl.value = "2";
+                        document.search_form1.lm.value = "-1";
+                        url = "http://image.baidu.com/i";
+                    }
+                    if (formname.myselectvalue.value == "6") {
+                        url = "http://tieba.baidu.com";
+                        document.search_form1.tn.value = "baiduPostSearch";
+                        document.search_form1.ct.value = "352321536";
+                        document.search_form1.rn.value = "10";
+                        document.search_form1.lm.value = "65536";
+                    }
+
+                    formname.action = url;
+                    return true;
+                }
+            </script>
+            <form class="serach_form" onsubmit="return gowhere1(this)" target="_blank" name="search_form1" method="get" action="http://www.baidu.com/baidu">
+                <table width="100%" height="80" cellspacing="0" cellpadding="0" border="0">
+                    <tbody><tr>
+                        <td>
+                            <table width="700px" height="80" cellspacing="0" cellpadding="0" border="0">
+                                <input type="hidden" value="0" name="myselectvalue">
+                                <input type="hidden" value="utf-8" name="ie">
+                                <input type="hidden" name="tn" value="baidu">
+                                <input type="hidden" name="ct">
+                                <input type="hidden" name="lm">
+                                <input type="hidden" name="cl">
+                                <input type="hidden" name="rn">
+                                <tbody><tr>
+                                    <td width="9%" valign="bottom">
+                                        <div align="center" style="margin-right:4px;width: 100px;position: relative;top: -5px;">
+                                            <!--<h3 style="color: #3366cc">百度搜索</h3>-->
+                                            <a href="http://www.baidu.com/" target="_blank">
+                                                <img border="0" align="bottom" alt="Baidu" src="img/baidu.png" >
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td width="500px" valign="bottom" class="select_nub">
+                                        <input type="radio" value="0" onclick="javascript:this.form.myselectvalue.value=4;" name="myselect">
+                                        <span>
+                                            新闻
+                                        </span>
+                                        <!--<input type="radio" value="0" onclick="javascript:this.form.myselectvalue.value=0;" name="myselect" checked="">-->
+										<a href="javascript:void 0" class="f12 nub_sel" value="0" onclick="javascript:this.form.myselectvalue.value=0;" name="myselect" checked=""  >
+										    网页
+										</a>
+
+                                        <a href="javascript:void 0" class="f12" >
+
+                                                测试
+
+                                        </a>
+
+                                        <a href="javascript:void 0" class="f12" >
+
+                                                你妹
+
+                                        </a>
+
+                                        <input type="radio" value="1" onclick="javascript:this.form.myselectvalue.value=1;" name="myselect">
+                                            <span class="f12">
+                                            <font>
+                                                音乐
+                                            </font>
+                                            </span>
+                                        <input type="radio" value="0" onclick="javascript:this.form.myselectvalue.value=6;" name="myselect">
+                                        <font>
+                                            贴吧
+                                        </font>
+
+                                        <input type="radio" value="0" onclick="javascript:this.form.myselectvalue.value=5;" name="myselect">
+                                        <font>
+                                            图片
+                                        </font>
+
+                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="right">
+                                            <tbody>
+                                            <tr>
+                                                <td style="padding-top:4px;">
+                                                    <span>
+                                                        <input class="serach_input" size="40" name="word" id="word" placeholder="这里是百度搜索，请输入关键词" style="">
+                                                    </span>
+                                                    <input  type="submit" class="serach_button" value="百度一下">
+                                                </td>
+                                                <td>
+                                                    <br>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="8%"></td>
+                                    <td width="92%"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td></tr>
+                                </tbody></table>
+                        </td>
+                    </tr>
+                    </tbody></table>
+            </form>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="recommend_cont">
+            <h3><i class="fa fa-globe"></i>&nbsp;看头条：</h3>
+            <ul>
+                <li><a href="http://news.hao123.com/" target="_blank">hao123头条</a></li>
+                <li><a href="http://news.sina.com.cn/" target="_blank">新浪新闻</a></li>
+                <li><a href="http://news.ifeng.com/" target="_blank">凤凰资讯</a></li>
+                <li><a href="http://news.163.com/" target="_blank">新华网</a></li>
+                <li><a href="http://www.huabian.com/" target="_blank">花边新闻</a></li>
+                <li><a href="http://news.163.com/" target="_blank">人民网</a></li>
+                <li><a href="http://www.huanqiu.com/" target="_blank">环球时报</a></li>
+                <li><a href="http://www.huanqiu.com/" target="_blank">铁血军事</a></li>
+                <li><a href="http://www.huanqiu.com/" target="_blank">中华军事</a></li>
+            </ul>
+        </div>
+        <div class="cont">
+            <div class="left_cont">
+                <ul>
+                    <li><a href="javascript:void 0" class="select"><i class="fa fa-file-text-o " style="position: relative;top:-2px; right: 3px;"></i>&nbsp;Page 1</a></li>
+                    <li><a href="javascript:void 0"><i class="fa fa-file-text-o " style="position: relative;top:-2px; right: 3px;"></i>&nbsp;Page 2</a></li>
+                    <li><a href="javascript:void 0"><i class="fa fa-file-text-o " style="position: relative;top:-2px; right: 3px;"></i>&nbsp;Page 3</a></li>
+                </ul>
+            </div>
+            <div class="right_cont">
+                <div class="page_cont" style="display: block">
+                    <div class="add_url" style="display:none">
+                        <form>
+                            <span style="font-size: 14px;">网站名称：</span>
+                            <input type="text" placeholder="网站名称" maxlength="6" style="width:150px;margin-right: 4px;">
+                            <span style="font-size: 14px;">网站地址：</span>
+                            <input type="text" placeholder="网站地址" style="width:290px;">
+                            <input type="submit" value="添加">
+                            <!--<input type="submit" value="取消">-->
+                            <div class="close_add"><i class="fa fa-times-circle fa-2x"></i></div>
+                        </form>
+                    </div>
+                    <ul>
+                        <li><a href="" target=""><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;12306<span class="manage_eidt" style="display:none">&nbsp;<i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;<i class="fa fa-times"></i></span></a></li>
+                        <li><a href="http://weibo.com/" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;新浪微博</a></li>
+                        <li><a href="" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;网易</a></li>
+                        <li><a href="" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;腾讯</a></li>
+                        <li><a href="http://www.douban.com/" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;豆瓣</a></li>
+                        <li><a href="" target=""><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;暴走漫画</a></li>
+                        <li><a href="" target=""><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;糗事百科</a></li>
+                        <li><a href="http://www.jd.com/" target="_blank"><i class="href_ico2"></i>京东商城</a></li>
+                        <li><a href="http://taobao.com" target="_blank"><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;淘宝</a></li>
+                        <li><a href="" target=""><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;有货Yoho</a></li>
+                        <li><a href="" target=""><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;大众点评</a></li>
+                        <li><a href="" target=""><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;1号店</a></li>
+                        <li><a href="" target=""><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;蘑菇街</a></li>
+                        <li><a href="" target=""><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;美团</a></li>
+                        <li><a href="" target=""><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;百度糯米</a></li>
+                        <li><a href="" target=""><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;优酷</a></li>
+                        <li><a href="http://74.125.102.174/" target="_blank"><i class="href_ico"></i>Google</a></li>
+                        <li><a href="" target=""><i class="href_ico3"></i>搜狐视频</a></li>
+                        <li><a href="" target=""><i class="href_ico3"></i>乐视</a></li>
+                        <li><a href="https://portal.qiniu.com/" target="_blank"><i class="href_ico"></i>七牛云存储</a></li>
+                        <li><a href="" target=""><i class="href_ico2"></i>携程旅行</a></li>
+                        <li><a href="" target=""><i class="href_ico3"></i>同程</a></li>
+                        <li><a href="" target=""><i class="href_ico3"></i>58同城</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>赶集网</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>中关村在线</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>太平洋电脑</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>汽车之家</a></li>
+                        <li><a href="http://dict.youdao.com/" target="_blank"><i class="href_ico1"></i>有道词典</a></li>
+                        <li><a href="http://sports.sina.com.cn/nba/" target="_blank"><i class="href_ico"></i>腾讯NBA</a></li>
+                        <li><a href="http://sports.sina.com.cn/nba/" target="_blank"><i class="href_ico"></i>新浪NBA</a></li>
+                        <li><a href="" target="">新浪足球</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>虎扑体育</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>谷歌</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>百度贴吧</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>下厨房</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>网易云音乐</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>军事新闻</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>起点中文网</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>虾米音乐</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>凤凰财经</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>东方财富</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>桌酷壁纸</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>工商银行</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>建设银行</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>中国银行</a></li>
+                        <li><a href="" target=""><i class="href_ico"></i>招商银行</a></li>
+                    </ul>
+                    <div class="operate">
+                        <div class="manage">
+                            <a href="javascript:void 0"><i class="fa fa-cog"></i>管理</a>
+                        </div>
+                        <div class="edit">
+                            <a href="javascript:void 0"><i class="fa fa-plus-circle"></i>添加</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page_cont" style="display: none;background: url('img/no_web.png');">
+                    <div class="hand"></div>
+                    <div class="add_url" style="display:none">
+                        <form>
+                            <span style="font-size: 14px;">网站名称：</span>
+                            <input type="text" placeholder="网站名称" maxlength="6" style="width:150px;margin-right: 4px;">
+                            <span style="font-size: 14px;">网站地址：</span>
+                            <input type="text" placeholder="网站地址" style="width:290px;">
+                            <input type="submit" value="添加">
+                            <!--<input type="submit" value="取消">-->
+                            <div class="close_add"><i class="fa fa-times-circle fa-2x"></i></div>
+                        </form>
+                    </div>
+                    <ul>
+                        <li class=""></li>
+                    </ul>
+                    <div class="operate">
+                        <div class="manage">
+                            <a href="javascript:void 0"><i class="fa fa-cog"></i>管理</a>
+                        </div>
+                        <div class="edit">
+                            <a href="javascript:void 0"><i class="fa fa-plus-circle"></i>添加</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page_cont" style="display: none; background: url('img/no_web.png');">
+                    <div class="hand"></div>
+                    <div class="add_url" style="display:none">
+                        <form>
+                            <span style="font-size: 14px;">网站名称：</span>
+                            <input type="text" placeholder="网站名称" maxlength="6" style="width:150px;margin-right: 4px;">
+                            <span style="font-size: 14px;">网站地址：</span>
+                            <input type="text" placeholder="网站地址" style="width:290px;">
+                            <input type="submit" value="添加">
+                            <!--<input type="submit" value="取消">-->
+                            <div class="close_add"><i class="fa fa-times-circle fa-2x"></i></div>
+                        </form>
+                    </div>
+                    <ul>
+                        <li class=""></li>
+                    </ul>
+                    <div class="operate">
+                        <div class="manage">
+                            <a href="javascript:void 0"><i class="fa fa-cog"></i>管理</a>
+                        </div>
+                        <div class="edit">
+                            <a href="javascript:void 0"><i class="fa fa-plus-circle"></i>添加</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap_content">
+        <!--<a href="">-->
+            <!--<div class="feedback">-->
+                <!--<img src="img/jianyi.png" width="30px" height="30px" style="color: #5c76b7">-->
+                <!--<p>建议</p>-->
+            <!--</div>-->
+        <!--</a>-->
+        <a href="javascript: void 0">
+            <div class="feedback">
+                <!--<img src="img/jianyi.png" width="30px" height="30px" style="color: #5c76b7">-->
+                <div class="top1" style="width:28px;margin: 0 auto">
+                    <i class="fa fa-chevron-up to_top" ></i><p>Top</p>
+                </div>
+            </div>
+        </a>
+        <div class="strip_cont">
+            <h3>有范</h3>
+            <ul>
+                <li><a href="http://www.36kr.com/" target="_blank">36氪</a></li>
+                <li><a href="http://www.leiphone.com/" target="_blank">雷锋网</a></li>
+                <li><a href="http://www.huxi/" target="_blank">虎嗅网</a></li>
+                <li><a href="http://www.chinaz.com/" target="_blank">站长之家</a></li>
+                <li><a href="http://www.zhihu.com/" target="_blank">知乎</a></li>
+                <li><a href="http://www.ifanr.com/" target="_blankhttp://www.ifanr.com/">爱范</a></li>
+                <li><a href="">i_黑马</a></li>
+                <li><a href="http://www.zealer.com/" target="_blank">ZEALER</a></li>
+                <li><a href="http://mall.360.com/" target="_blank">360奇酷</a></li>
+                <li><a href="">小众软件</a></li>
+            </ul>
+        </div>
+        <div class="strip_cont">
+            <h3>设计</h3>
+            <ul>
+                <li><a href="">优设网</a></li>
+                <li><a href="">UI中国</a></li>
+                <li><a href="">站酷</a></li>
+                <li><a href="">花瓣</a></li>
+                <li><a href="">Pinterest</a></li>
+                <li><a href="">Drribble</a></li>
+                <li><a href="">Behance</a></li>
+                <li><a href="">设计师导航</a></li>
+                <li><a href="">设计纹理</a></li>
+            </ul>
+        </div>
+        <div class="strip_cont">
+            <h3>前端</h3>
+            <ul>
+                <li><a href="">W3Cschool</a></li>
+                <li><a href="">W3cplus</a></li>
+                <li><a href="">大前端</a></li>
+                <li><a href="">Html5中国</a></li>
+                <li><a href="">前端导航</a></li>
+                <li><a href="">W3cfuns</a></li>
+                <li><a href="">前端乱炖</a></li>
+                <li><a href="">CSDN</a></li>
+            </ul>
+        </div>
+        <div class="strip_cont">
+            <h3>牛人博客</h3>
+            <ul>
+                <li><a href="">月光博客</a></li>
+                <li><a href="">道哥的黑板报</a></li>
+                <li><a href="">Wenli(前端)</a></li>
+                <li><a href="">MUKI(前端)</a></li>
+                <li><a href="">杜鹏霄(安卓)</a></li>
+                <li><a href="">Kevin(设计)</a></li>
+                <li><a href="">轩辕阁(前端)</a></li>
+                <li><a href="">戴颖毅(设计)</a></li>
+                <li><a href="">C7210(设计)</a></li>
+                <li><a href="">百晓生(产品)</a></li>
+            </ul>
+        </div>
+        <div class="strip_cont">
+            <h3>免费图片</h3>
+            <ul>
+                <li><a href="https://unsplash.com/" target="_blank">Unsplash</a></li>
+                <li><a href="http://realisticshots.com/" target="_blank">Realisticshots</a></li>
+                <li><a href="http://freenaturestock.com/" target="_blank">Freenature</a></li>
+                <li><a href="http://cupcake.nilssonlee.se/" target="_blank">cupcake</a></li>
+                <li><a href="http://www.designerspics.com/" target="_blank">Designerspics</a></li>
+                <!--<li><a href="http://fancycrave.com/"><F></F>ancycrave</a></li>-->
+                <li><a href="http://www.freemagebank.com/" target="_blank">Freemage</a></li>
+                <li><a href="http://subtlepatterns.com/" target="_blank">设计纹理</a></li>
+            </ul>
+        </div>
+        <div class="strip_cont">
+            <h3>工具下载</h3>
+            <ul>
+                <li><a href="">红杏出墙(翻墙)</a></li>
+                <li><a href="">Webstrom</a></li>
+                <li><a href="">Sublmit</a></li>
+                <li><a href="">PS CC</a></li>
+                <li><a href="">Axure</a></li>
+                <li><a href="">Markman</a></li>
+                <li><a href="http://mydown.yesky.com/soft/network/download/425/468425.shtml?baidu">维棠视频录制</a></li>
+                <li><a href="">系统下载</a></li>
+            </ul>
+        </div>
+        <div class="strip_cont">
+            <h3>爱学习</h3>
+            <ul>
+                <li><a href="http://www.duokan.com" target="_blank">多看阅读</a></li>
+                <li><a href="http://read.douban.com/?dcs=top-nav&dcm=douban" target="_blank">豆瓣阅读</a></li>
+                <li><a href="http://readfree.me/book/25747921/" target="_blank">readfree(免费书籍)</a></li>
+                <li><a href="http://open.163.com/" target="_blank">网易公开课</a></li>
+                <li><a href="http://open.163.com/" target="_blank">慕课网</a></li>
+                <li><a href=http://www.zhihu.com/question/19652509" target="_blank">交互设计</a></li>
+                <li><a href="https://github.com/JacksonTian/fks" target="_blank">Git前端</a></li>
+                <li><a href="http://coderlmn.github.io/code-standards/" target="_blank">前端代码规范</a></li>
+            </ul>
+        </div>        <div class="strip_cont">
+        <h3>站长收藏</h3>
+        <ul>
+            <li><a href="">素材收集</a></li>
+            <li><a href="">免费网盘</a></li>
+            <li><a href="">知乎精华</a></li>
+            <li><a href="">建站精华</a></li>
+            <li><a href="">找电影</a></li>
+            <li><a href="">设计精华</a></li>
+            <li><a href="">交互精华</a></li>
+        </ul>
+    </div>
+    <div class="strip_cont" style="border-bottom: none;">
+        <h3>站长书单</h3>
+        <ul>
+            <li><a href="">设计分类</a></li>
+            <li><a href="">前端分类</a></li>
+            <li><a href="">后端分类</a></li>
+            <li><a href="">产品类</a></li>
+            <li><a href="">互联网类</a></li>
+            <li><a href="">小说读物</a></li>
+            <li><a href="">官场小说</a></li>
+            <li><a href="">特别推荐</a></li>
+        </ul>
+    </div>
+
+    </div>
+    <div class="blogroll">
+        <div class="blogroll1">
+            <div class="footer">
+                <div class="cont_href">
+                    <h3>友情链接</h3>
+                    <a href="http://ice.gs" target="_blank">ICE.GS</a>
+                    <a href="http://www.hao123.com "target="_blank">hao123</a>
+                    <a href="" target="_blank">Xl_blog</a>
+                    <a href="http://xiaoa.name" target="_blank">Xiaoa.name</a>
+                    <a href="http://www.royalmice.com/hankzhou" target="_blank">Mouse House</a>
+                    <a href="" target="_blank">Digger plus</a>
+                </div>
+                <div class="detail_cont">
+                    <a href="#" target="_blank" >关于本站</a>
+                    <a href="#" target="_blank" >意见反馈</a>
+                    <span>QQ交流群：454431398</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>V1.0</span>
+                    <span>感谢七牛提供cdn加速服务</span>
+                    <!--<span>copyright&nbsp;&nbsp;2015&nbsp;&nbsp;by&nbsp;&nbsp;hankzhou</span>-->
+                    <!--<span>网站：Netn&nbsp;v1.0</span>-->
+                </div>
+            </div>
+
+            <div class="cont_contact">
+
+                <img src="img/erweima.png" style="" >
+                <p>打赏可有可无，感谢来访</p>
+            </div>
+        </div>
+    </div>
+    <div class="auther">
+        <p>© 2015 design and coding by <a href="http://royalmice.com/hankzhou"  target="_blank" style="color: #ffffff">hankzhou</a></p>
+    </div>
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
