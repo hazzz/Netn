@@ -15,35 +15,39 @@
 </style>
 
 <body id="ebody" style=''>
-    <div class="nav">
-        <div class="nav1">
-            <a href=""><i class="fa fa-home a_icon"></i>&nbsp;设为主页</a>
-            <a href="javascript:void 0" class="right_p skin_change"><i class="fa  a_icon"></i>&nbsp;换肤</a>
-            <a href="javascript:void 0" class="right_p logn_in"><i class="fa  a_icon"></i>&nbsp;登录</a>
-            <div class="skin" style="display:none;">
-                <ul>
-                    <li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/i.JPG" onclick="return false"><span class="i_s"></span><img src="img/wenli/giftly.png" width="100px" height="80px"></a></li>
-                    <li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/3.jpg" onclick="return false" ><span class="i_s"></span><img src="img/background/3.png" width="100px" height="80px"></a></li>
-                    <li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/f1.jpg" onclick="return false"><span class="i_s"></span><img src="img/background/4.png" width="100px" height="80px"></a></li>
-                    <li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/1.jpg" onclick="return false"  ><span class="i_s"></span><img src="img/background/1.png" width="100px" height="80px"></a></li>
-                    <li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/2.jpg"  onclick="return false" ><span class="i_s"></span><img src="img/background/2.png" width="100px" height="80px"></a></li>
-                    <li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/t.jpg" onclick="return false"><span class="i_s"></span><img src="img/background/5.png" width="100px" height="80px"></a></li>
-                </ul>
-                <div class="skin_contral">
-                    <input type="submit" value="保存">
-                    <input type="submit" value="取消" class="close_skin">
-                </div>
-            </div>
+    <!--<div class="nav">-->
+        <!--<div class="nav1">-->
+            <!--<a href=""><i class="fa fa-home a_icon"></i>&nbsp;设为主页</a>-->
+            <!--&lt;!&ndash;<a href="javascript:void 0" class="right_p skin_change"><i class="fa  a_icon"></i>&nbsp;换肤</a>&ndash;&gt;-->
+            <!--<a href="javascript:void 0" class="right_p logn_in"><i class="fa  a_icon"></i>&nbsp;登录</a>-->
+            <!--<div class="skin" style="display:none;">-->
+                <!--<ul>-->
+                    <!--<li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/i.JPG" onclick="return false"><span class="i_s"></span><img src="img/wenli/giftly.png" width="100px" height="80px"></a></li>-->
+                    <!--<li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/3.jpg" onclick="return false" ><span class="i_s"></span><img src="img/background/3.png" width="100px" height="80px"></a></li>-->
+                    <!--<li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/f1.jpg" onclick="return false"><span class="i_s"></span><img src="img/background/4.png" width="100px" height="80px"></a></li>-->
+                    <!--<li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/1.jpg" onclick="return false"  ><span class="i_s"></span><img src="img/background/1.png" width="100px" height="80px"></a></li>-->
+                    <!--<li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/2.jpg"  onclick="return false" ><span class="i_s"></span><img src="img/background/2.png" width="100px" height="80px"></a></li>-->
+                    <!--<li><a href="http://7u2fwy.com1.z0.glb.clouddn.com/t.jpg" onclick="return false"><span class="i_s"></span><img src="img/background/5.png" width="100px" height="80px"></a></li>-->
+                <!--</ul>-->
+                <!--<div class="skin_contral">-->
+                    <!--<input type="submit" value="保存">-->
+                    <!--<input type="submit" value="取消" class="close_skin">-->
+                <!--</div>-->
+            <!--</div>-->
 
-        </div>
-    </div>
+        <!--</div>-->
+    <!--</div>-->
 
     <div class="header">
         <div class="header1">
             <a href=""><div class="logo"></div></a>
             <h3>Born for the internet</h3>
-            <div class="storage other_cont" style="margin-top: 5px;">
-                <h3><i class="fa fa-skyatlas fa-lg"></i>&nbsp;云盘&nbsp;<i class="fa fa-caret-down"></i></h3>
+            <div class="login other_cont">
+                <h3>&nbsp;登录&nbsp;</h3>
+            </div>
+
+            <div class="storage other_cont">
+                <h3>&nbsp;云盘&nbsp;</h3>
                 <div class="skyatlas_href">
                     <ul>
                         <li><a href="http://pan.baidu.com/" target="_blank" style="background: url('img/baiduyun.ico') no-repeat ;background-size: 16px 16px;background-position: 18px 3px;"> 百度云</a></li>
@@ -53,8 +57,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="email other_cont" style="border: none">
-                <form style="margin-top: 5px">
+            <div class="email other_cont">
+                <h3>&nbsp;邮箱&nbsp;</h3>
+                <form style="display: none" >
                     <input type="text" placeholder="邮箱帐号">
                     <span>
                        <select>
@@ -75,7 +80,6 @@
                     <span> <input type="submit" value="登录"></span>
                 </form>
             </div>
-
             <!--<div class="calendar other_cont">-->
             <!--</div>-->
 
@@ -138,7 +142,7 @@
                                 <input type="hidden" name="rn">
                                 <tbody><tr>
                                     <td width="9%" valign="bottom">
-                                        <div align="center" style="margin-right:4px;width: 100px;position: relative;top: -5px;">
+                                        <div align="center" style="margin-right:20px;width: 100px;position: relative;top: -3px;">
                                             <!--<h3 style="color: #3366cc">百度搜索</h3>-->
                                             <a href="http://www.baidu.com/" target="_blank">
                                                 <img border="0" align="bottom" alt="Baidu" src="img/baidu.png" >
@@ -146,49 +150,35 @@
                                         </div>
                                     </td>
                                     <td width="500px" valign="bottom" class="select_nub">
-                                        <input type="radio" value="0" onclick="javascript:this.form.myselectvalue.value=4;" name="myselect">
-                                        <span>
-                                            新闻
-                                        </span>
-                                        <!--<input type="radio" value="0" onclick="javascript:this.form.myselectvalue.value=0;" name="myselect" checked="">-->
-										<a href="javascript:void 0" class="f12 nub_sel" value="0" onclick="javascript:this.form.myselectvalue.value=0;" name="myselect" checked=""  >
-										    网页
-										</a>
+                                        <label>
+                                            <input type="radio" value="0" onclick="javascript:this.form.myselectvalue.value=0;" name="myselect" checked="">
+                                            网页
 
-                                        <a href="javascript:void 0" class="f12" >
+                                        </label>
+										<!--<a href="javascript:void 0" class="f12 nub_sel" value="0" onclick="javascript:this.form.myselectvalue.value=0;" name="myselect" checked=""  >-->
+										    <!---->
+										<!--</a>-->
 
-                                                测试
+                                        <label>
 
-                                        </a>
-
-                                        <a href="javascript:void 0" class="f12" >
-
-                                                你妹
-
-                                        </a>
-
-                                        <input type="radio" value="1" onclick="javascript:this.form.myselectvalue.value=1;" name="myselect">
-                                            <span class="f12">
-                                            <font>
-                                                音乐
-                                            </font>
-                                            </span>
                                         <input type="radio" value="0" onclick="javascript:this.form.myselectvalue.value=6;" name="myselect">
                                         <font>
                                             贴吧
                                         </font>
-
+                                        </label>
+                                        <label>
                                         <input type="radio" value="0" onclick="javascript:this.form.myselectvalue.value=5;" name="myselect">
                                         <font>
                                             图片
                                         </font>
+                                        </label>
 
                                         <table width="100%" cellspacing="0" cellpadding="0" border="0" align="right">
                                             <tbody>
                                             <tr>
                                                 <td style="padding-top:4px;">
                                                     <span>
-                                                        <input class="serach_input" size="40" name="word" id="word" placeholder="这里是百度搜索，请输入关键词" style="">
+                                                        <input class="serach_input" size="40" name="word" id="word" placeholder="" style="">
                                                     </span>
                                                     <input  type="submit" class="serach_button" value="百度一下">
                                                 </td>
@@ -516,8 +506,7 @@
                     <a href="#" target="_blank" >关于本站</a>
                     <a href="#" target="_blank" >意见反馈</a>
                     <span>QQ交流群：454431398</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>V1.0</span>
-                    <span>感谢七牛提供cdn加速服务</span>
+                    <span>版本：V1.0</span>
                     <!--<span>copyright&nbsp;&nbsp;2015&nbsp;&nbsp;by&nbsp;&nbsp;hankzhou</span>-->
                     <!--<span>网站：Netn&nbsp;v1.0</span>-->
                 </div>
@@ -531,7 +520,7 @@
         </div>
     </div>
     <div class="auther">
-        <p>© 2015 design and coding by <a href="http://royalmice.com/hankzhou"  target="_blank" style="color: #ffffff">hankzhou</a></p>
+        <p><i>Copyright     © 2015 design and coding by <a href="http://royalmice.com/hankzhou"  target="_blank" style="color: #ffffff">hankzhou</a></i></p>
     </div>
 
     <script src="js/jquery-2.1.1.js"></script>

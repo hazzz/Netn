@@ -13,12 +13,14 @@ a{text-decoration: none;
     color: #504a45;}
 input[type=text],input[type=submit],input[type=password],select:focus{outline: none;}
 
+label:hover{cursor: pointer;color: #596faa}
+label{margin-right: 20px;color: #4d4d4d}
 #ebody{
     /*background:rgba(0,0,0,0.6);*/
     /*background-position: 0 82px;*/
-    background-image:url("http://7u2fwy.com1.z0.glb.clouddn.com/3.jpg") ;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image:url("../img/wenli/ps_neutral.png") ;
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
 
 }
 .nav{
@@ -53,7 +55,7 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
     height: 20px;
     position:absolute;
     /*background-color: #3366cc;*/
-    background: url('../img/xuanzhong.png');
+    background: url('../img/wenli/ps_neutral.png');
 }
 
 .nav1 .skin img:hover{
@@ -126,10 +128,10 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
 }
 .header{
     width: auto;
-    height:54px;
+    height:60px;
     background: #ffffff;
     /*background-color: rgba(215, 215, 215, 0.5);*/
-    /*border-bottom: 1px solid #d1cecd;*/
+    border-bottom: 1px solid #d1cecd;
 
 }
 .header1{
@@ -140,11 +142,10 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
 }
 .header .logo{
     width: 95px;
-    height: 50px;
+    height: 60px;
     /*width: 157px;*/
     /*height: 64px;*/
     float: left;
-    margin-top: 3px;
     background: url("../img/logo.png") no-repeat left;
 }
 .header1 h3{
@@ -166,12 +167,12 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
 }
 
 .header1 .other_cont{
-     width: 120px;
-     height:42px;
+     width: 100px;
+     height:60px;
      float: right;
-     /*background: #d3d0cf;*/
      margin-left: 10px;
-    border: 1px solid #c0bdbc;
+    border: 1px solid #e0dddc;
+    border-top: none;
 
 }
 .header1 .skyatlas_href{
@@ -200,15 +201,15 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
 }
 .header1 .email{
     /*margin-right: 40px;*/
-    width: 270px;
     background: none;
 }
 .header1 .other_cont h3{
     position: relative;
-    line-height:34px;
-    top:4px;
-    left: 10px;
+    line-height: 34px;
+    top: 12px;
+    left: 20px;
     cursor: pointer;
+
 }
 .header1 .other_cont h3:hover{
     color: #e23b20;
@@ -216,7 +217,7 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
 .search{
     width:auto;
     height:84px;
-    background-color: rgba(215, 215, 215, 0.2);
+    /*background-color: rgba(215, 215, 215, 0.2);*/
     /*border-bottom: 1px solid #e7e4e3;*/
     padding-top: 20px;
 }
@@ -241,33 +242,34 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
 }
 
 .search1 .serach_input{
-    padding-left:6px;font:14px/1.5 '宋体';width:400px;height: 32px;border: 2px solid #7796e6;font-size: 16px;
+    padding-left:6px;font:14px/1.5 '宋体';width:440px;height: 34px;border: 1px solid #777777;font-size: 16px;
 }
 
 .search1 .serach_input:focus{
     /*background: #f8f8f8;*/
-    box-shadow:1px 1px 2px #4b4b4b inset;
     outline: none;
 }
 .search1 .serach_button{
-    font:14px/1.5 "微軟正黑體",arial,Simsun, sans-serif;
-    border: 1px solid #7796e6;
-    background: #7796E6;color: #ffffff;width: 80px;
+    font:16px/1.5 "宋体",arial,Simsun, sans-serif;
+    font-weight: bold;
+    border: 1px solid #777777;
+    background: #e7e7e7;color: #4e4e4e;width: 100px;
     border-radius: 1px;
-    height:34px;cursor: pointer;margin-left:2px;
-    position: relative;top:-3px;
-    box-shadow:0 3px 0 #5771ae;
+    height:36px;cursor: pointer;
+    margin-left:3px;
+    position: relative;
+    /*box-shadow:0 3px 0 #5771ae;*/
 }
 
 .search1 .serach_button:hover{
     /*box-shadow:0 1px 1px #504a45;*/
-    cursor: pointer;background: #809dec;
+    cursor: pointer;background: #f4f4f4;
     /*border: 1px solid #80a0f5*/
-    box-shadow:0 3px 0 #3f8bd7;
+    /*box-shadow:0 3px 0 #3f8bd7;*/
 }
 .search1 .serach_button:active{
     box-shadow:none;
-    position: relative;top:-1px;
+    /*position: relative;top:-1px;*/
 }
 .wrap{
     width:980px;height:370px; margin: 0 auto;
@@ -279,6 +281,8 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
     background: #ffffff;
     margin-bottom:10px;
     overflow: hidden;
+    box-shadow: 0 2px 2px #BABABA;
+
 }
 .wrap .recommend_cont h3{float: left;margin-left: 20px;line-height: 36px;}
 .wrap .recommend_cont ul{margin-top: 8px;}
@@ -290,6 +294,9 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
     width: 160px;
     height: 320px;
     background: #ffffff;
+    /*border:1px solid #c1c1c1;*/
+    box-shadow: 0 2px 2px #BABABA;
+
     float: left;
 }
 .wrap .left_cont a{
@@ -316,7 +323,10 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
     height: 320px;
     background: #ffffff;
     opacity: 0.9;
-    float: right;}
+    /*border:1px solid #c1c1c1;*/
+    box-shadow: 0 2px 2px #BABABA;
+    float: right;
+}
 .wrap .right_cont .page_cont{
     width: 810px;
     height:320px;
@@ -396,7 +406,7 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
     text-decoration: underline;
     color: #e23b20;
     /*border-bottom: 1px #e23b20 solid;*/
-    background: #f4f4f4;
+    /*background: #f4f4f4;*/
 }
 
 .wrap .right_cont .href_ico,.href_ico1,.href_ico2{
@@ -453,7 +463,9 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
     opacity: 0.9;
     margin-top:15px;
     padding-top: 2px;
-    border-top: 2px solid #7796e6;
+    /*border-top: 1px solid #777777;*/
+    box-shadow: 0 2px 2px #BABABA;
+
 }
 
 .feedback{
@@ -504,17 +516,19 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
 }
 .wrap_content a{
     text-align: left;
-    display:block;color: #504a45;margin-left: 20px;float: left;line-height:38px;margin-right: 24px;}
+    display:block;color: #504a45;margin-left: 20px;float: left;line-height:38px;margin-right: 24px;
+}
 .wrap_content a:hover{color:#e23b20;text-decoration: underline;}
 
 .blogroll{
     width:auto;
     height:226px;
-    background: #ffffff;
+    background: #3a3a3a;
     margin-top: 20px;
 }
 .blogroll .blogroll1{
      width:980px;
+    color: #ffffff;
      margin: 0 auto;
      overflow: hidden;
  }
@@ -528,14 +542,16 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
     width: auto;
 }
 .footer .cont_href{
+    width: 360px;
     margin-bottom:13px;
     height: 152px;
-    border-bottom: 1px dashed #d3d0cf;
+    /*border-bottom: 1px dashed #d3d0cf;*/
 }
 
 .blogroll .cont_href h3{
     margin-top: 20px;
     margin-bottom:20px;
+
 
 }
 .blogroll .footer a{
@@ -543,6 +559,7 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
     margin-bottom:12px;
     display: block;
     float: left;
+    color: #fff;
 }
 .blogroll .footer a:hover{
     text-decoration: underline;
@@ -550,13 +567,13 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
 }
 
 .blogroll1 .cont_contact{
-    margin-top: 20px;
-    float: left;
+    margin-top: 28px;
+    float: right;
     margin-left:40px;
 }
 .blogroll1 .cont_contact img{
     width: 140px;height:140px;
-    /*border: 2px solid #86a7ff;border-radius: 3px;*/
+    border: 3px solid #888888;
 }
 .blogroll1 .cont_contact p{
     margin-top: 4px;
@@ -565,13 +582,13 @@ input[type=text],input[type=submit],input[type=password],select:focus{outline: n
 .auther{
     width:auto;
     height:36px;
-    background: #4b4b4b;
-    padding-left: 60px;
+    background: #2F2F2F;
+    padding-left: 27px;
 }
 .auther p{
     width:980px;
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 35px;
-    color: #9e9b9a;
+    color: #c1c1c1;
 }
